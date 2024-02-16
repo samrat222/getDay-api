@@ -8,7 +8,7 @@ const App = () => {
 
   const handleSubmit = async () => {
     try {
-      const response = await axios.get(`http://localhost:3000/getDay?date=${date}`);
+      const response = await axios.get(`https://getday-api-production.up.railway.app/getDay?date=${date}`);
       console.log(response.data);
       setDayOfWeek(response.data.dayOfWeek);
       setError('');
